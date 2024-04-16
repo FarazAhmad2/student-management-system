@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section>
+    <div class="search-bar">
+        <input id="search" type="text" placeholder="Search">
+        <button id="search-btn" type="button">Search</button>
+    </div>
+    <div class="sort-box">
+        <button data-order="asc" data-column="first_name" type="button" id="sortAtoZ">Sort A->Z</button>
+        <button data-order="desc" data-column="first_name" type="button" id="sortZtoA">Sort Z->A</button>
+        <button data-order="asc" data-column="marks" class="sort-btn" type="button" id="sortMarks">Sort By Marks</button>
+        <button data-order="asc" data-column="passing" type="button" id="sortPass">Sort By Passing</button>
+        <button data-order="asc" data-column="class" class="sort-btn" type="button" id="sortClass">Sort By Class</button>
+        <button data-order="asc" data-column="gender" type="button" id="sortGender">Sort By Gender</button>
+    </div>
+
+    <div class="table-container">
+
+    <table id="table-1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th data-column="first_name last_name">Name</th>
+                <th data-column="gender">Gender</th>
+                <th data-column="class">Class</th>
+                <th data-column="marks">Marks</th>
+                <th data-column="passing">Passing</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+        
+    </div>
+   </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
